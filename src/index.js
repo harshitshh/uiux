@@ -18,7 +18,7 @@ const authLink = setContext((_, { headers }) => {
   // const token = process.env.REACT_APP_GRAPHQL_API;
 
   // 2. Use a hardcoded token (for quick testing, NOT recommended for production)
-  const token = "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"; // Replace with your token
+  const token = process.env.REACT_APP_GITHUB_TOKEN; // Replace with your token
 
   return {
     headers: {
